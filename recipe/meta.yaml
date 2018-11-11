@@ -12,10 +12,8 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
-  # Temporary disable until scipy+np112 is available.
-  skip: True  # [np==112]
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  number: 1000
+  script: python -m pip install --no-deps --ignore-installed .  --verbose
 
 requirements:
   build:
@@ -23,6 +21,7 @@ requirements:
   host:
     - python
     - setuptools
+    - pip
     - cython
     - numpy
   run:
