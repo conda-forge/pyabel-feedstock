@@ -1,6 +1,6 @@
 {% set name = "PyAbel" %}
-{% set version = "0.8.0" %}
-{% set sha256 = "7159c8870ca648ba73cda35f3c2490a0e8b2f4cc9f2adce9653ec58d981f1089" %}
+{% set version = "0.8.1" %}
+{% set sha256 = "3b4e0a6bf1e129699cfb50b85ec7711979305c4fd91d5e56e6c190693d915528" %}
 
 package:
   name: {{ name|lower }}
