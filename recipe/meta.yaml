@@ -1,6 +1,6 @@
 {% set name = "PyAbel" %}
-{% set version = "0.8.0" %}
-{% set sha256 = "7159c8870ca648ba73cda35f3c2490a0e8b2f4cc9f2adce9653ec58d981f1089" %}
+{% set version = "0.8.2" %}
+{% set sha256 = "5493fb2ea4b5fe77e182425ae27b722056a6d1ce79f454e1e2eeba6fddd75098" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1000
+  number: 0
   script: python -m pip install --no-deps --ignore-installed .  --verbose
 
 requirements:
