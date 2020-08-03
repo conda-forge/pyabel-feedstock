@@ -1,6 +1,6 @@
 {% set name = "PyAbel" %}
-{% set version = "0.8.2" %}
-{% set sha256 = "5493fb2ea4b5fe77e182425ae27b722056a6d1ce79f454e1e2eeba6fddd75098" %}
+{% set version = "0.8.3" %}
+{% set sha256 = "c6dc00b0af37be9a2dd20e667a4c805b53a05bfe24061936f45aed245ed21a4f" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   script: python -m pip install --no-deps --ignore-installed .  --verbose
 
 requirements:
@@ -42,7 +42,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE.txt
-  summary: 'A Python package for forward and inverse Abel transforms'
+  summary: A Python package for forward and inverse Abel transforms
   description: |
     PyAbel is a Python package that provides functions for the forward and inverse Abel transforms.
     The forward Abel transform takes a slice of a cylindrically symmetric 3D object and provides the
