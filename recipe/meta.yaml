@@ -22,7 +22,7 @@ requirements:
     - python
     - setuptools
     - pip
-    - cython <3.0.0
+    - cython
     - numpy
   run:
     - python
